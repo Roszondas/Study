@@ -5,7 +5,7 @@
 
 int main()
 {
-	int col_in[4], col_out[4];
+	int col_in[3], col_out[3];
 	CSemaphore *Signal1 = new CSemaphore();
 
 	col_in[0] = 1;
