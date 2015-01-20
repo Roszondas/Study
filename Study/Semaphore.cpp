@@ -7,7 +7,7 @@ CSemaphore::CSemaphore()
 	green = 0;
 };
 
-void CSemaphore::GetStatus(int &colors)
+void CSemaphore::SetStatus(int &colors)
 {
 	int *in = &colors;
 
@@ -16,7 +16,7 @@ void CSemaphore::GetStatus(int &colors)
 	green = in[2];
 };
 
-void CSemaphore::SetStatus(int &colors)
+void CSemaphore::GetStatus(int &colors)
 {
 	int *out = &colors;
 
