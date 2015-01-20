@@ -6,3 +6,13 @@ CSemaphore::CSemaphore()
 	yellow = 0;
 	green = 0;
 };
+
+void CSemaphore::GetStatus(int &colors)
+{
+
+};
+
+void CSemaphore::SetStatus(int &colors)
+{
+
+};
