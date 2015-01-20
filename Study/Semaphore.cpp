@@ -24,3 +24,27 @@ void CSemaphore::GetStatus(int &colors)
 	out[1] = yellow;
 	out[2] = green;
 };
+
+void CSemaphore::SetR()
+{
+	red = 1;
+	yellow = green = 0;
+};
+
+void CSemaphore::SetY()
+{
+	yellow = 1;
+	red = green = 0;
+};
+
+void CSemaphore::SetG()
+{
+	green = 1;
+	yellow = red = 0;
+};
+
+void CSemaphore::Output()
+{
+	printf("Semaphore signals are:\nRed - %i\nYellow - %i\nGreen - %i\n\n",
+			red, yellow, green);
+};

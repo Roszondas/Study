@@ -68,6 +68,7 @@
     <ClCompile Include="Semaphore.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers.h" />
     <ClInclude Include="Semaphore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

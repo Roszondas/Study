@@ -1,23 +1,33 @@
-﻿#include <cstdio>
-#include <conio.h>
-
+﻿#include "Headers.h"
 #include "Semaphore.h"
 
 int main()
 {
-	int col_in[3], col_out[3];
+	int col_in[3];
 	CSemaphore *Signal1 = new CSemaphore();
 
+	printf("Start working.\n");
+	Signal1->Output();
+
+	printf("Set red light. Checking...\n");
+	Signal1->SetR();
+	Signal1->Output();
+
+	printf("Set yellow light. Checking...\n");
+	Signal1->SetY();
+	Signal1->Output();
+
+	printf("Set green light. Checking...\n");
+	Signal1->SetG();
+	Signal1->Output();
+
+	printf("Overloading semaphore. Checking...\n");
 	col_in[0] = 1;
-	col_in[1] = 0;
-	col_in[2] = 0;
-
+	col_in[1] = 1;
+	col_in[2] = 1;
 	Signal1->SetStatus(*col_in);
+	Signal1->Output();
 
-	Signal1->GetStatus(*col_out);
-
-	printf("Semaphore signals are:\nRed - %i\nYellow - %i\nGreen - %i\n", col_out[0], col_out[1], col_out[2]);
-
-	_getch();
+	printf("Checking done.\n");
 	return 0;
 }
