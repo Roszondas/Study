@@ -1,3 +1,5 @@
+#include "Headers.h"
+
 class CSemaphore
 {
 private:
@@ -9,4 +11,10 @@ public:
 
 	void GetStatus(int &colors);
 	void SetStatus(int &colors);
+
+	void SetR();
+	void SetY();
+	void SetG();
+
+	void Output();
 };
